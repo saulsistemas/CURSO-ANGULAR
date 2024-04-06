@@ -8,6 +8,7 @@ import { PropertyBindingComponent } from './01-Binding/property-binding/property
 import { EventBindingComponent } from './01-Binding/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './01-Binding/two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import { OneWayBindingComponent } from './01-Binding/one-way-binding/one-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     InterpolacionComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    OneWayBindingComponent
   ],
   imports: [
     BrowserModule,
