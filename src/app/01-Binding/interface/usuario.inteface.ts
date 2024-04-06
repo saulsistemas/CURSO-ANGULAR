@@ -1,5 +1,5 @@
 export interface Usuario{
   nombre:string,
   apellido:string,
-  fecha:Date
+  fecha?:Date
 }
