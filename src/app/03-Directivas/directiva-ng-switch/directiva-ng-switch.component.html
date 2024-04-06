@@ -1,0 +1,11 @@
+<div class="card">
+  <h1>Ejemplo de directiva [ngSwitch]</h1>
+  <div [ngSwitch]="estado">
+    <p *ngSwitchCase="'success'">El registro fue creado correctamente</p>
+    <p *ngSwitchCase="'warning'">Error de conexion, intentelo más tarde</p>
+    <p *ngSwitchCase="'danger'">Servicio no disponible</p>
+    <button class="btn btn-success " (click)="metodoSuccess()"> Verde </button>
+    <button class="btn btn-warning" (click)="metodoWarning()"> Amarillo </button>
+    <button class="btn btn-danger" (click)="metodoDanger()"> rojo </button>
+  </div>
+</div>

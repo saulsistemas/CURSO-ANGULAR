@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { OneWayBindingComponent } from './01-Binding/one-way-binding/one-way-binding.component';
 import { PipesComponent } from './02-Pipes/pipes/pipes.component';
 import { DirectivaNgIfComponent } from './03-Directivas/directiva-ng-if/directiva-ng-if.component';
+import { DirectivaNgSwitchComponent } from './03-Directivas/directiva-ng-switch/directiva-ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DirectivaNgIfComponent } from './03-Directivas/directiva-ng-if/directiv
     TwoWayBindingComponent,
     OneWayBindingComponent,
     PipesComponent,
-    DirectivaNgIfComponent
+    DirectivaNgIfComponent,
+    DirectivaNgSwitchComponent
   ],
   imports: [
     BrowserModule,
