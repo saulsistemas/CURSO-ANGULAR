@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class PropertyBindingComponent {
 
   public imagen: string = "/assets/img/santander-red.svg"
+
   constructor() {
     this.cambiarImagen();
   }
