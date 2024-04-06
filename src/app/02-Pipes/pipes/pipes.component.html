@@ -1,0 +1,103 @@
+<div class="card">
+  <h1>Pipes Número</h1>
+  <table>
+    <tr>
+      <th>Nombre Pipe</th>
+      <th>Valor sin Pipe</th>
+      <th>Valor con Pipe</th>
+      <th>Opciones del Pipe</th>
+    </tr>
+    <tr>
+      <td>decimal</td>
+      <td>{{numero}}</td>
+      <td>{{ numero | number:".2-2"}}</td>
+      <td># minimo de enteros #maximo decimales #minimo decimales</td>
+    </tr>
+
+  </table>
+</div>
+
+<div class="card">
+  <h1>Pipes  Date</h1>
+  <table>
+    <tr>
+      <th>Nombre Pipe</th>
+      <th>Valor sin Pipe</th>
+      <th>Valor con Pipe</th>
+      <th>Opciones del Pipe</th>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>{{fecha}}</td>
+      <td>{{ fecha | date:'dd/MM/yyyy'}}</td>
+      <td>formato tradicional de fechas</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>{{fecha}}</td>
+      <td>{{ fecha | date:'long'}}</td>
+      <td>Opción de texto "long" </td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>{{fecha}}</td>
+      <td>{{ fecha | date:'medium'}}</td>
+      <td>Opción de texto " "medium" </td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>{{fecha}}</td>
+      <td>{{ fecha | date:'short'}}</td>
+      <td>Opción de texto  "short"</td>
+    </tr>
+  </table>
+</div>
+
+<div class="card">
+  <h1>Pipes slice</h1>
+  <table>
+    <tr>
+      <th>Nombre Pipe</th>
+      <th>Valor sin Pipe</th>
+      <th>Valor con Pipe</th>
+      <th>Opciones del Pipe</th>
+    </tr>
+    <tr>
+      <td>slice</td>
+      <td>{{id}}</td>
+      <td>{{ id | slice:-2}}</td>
+      <td># de caracteres</td>
+    </tr>
+
+  </table>
+</div>
+
+<div class="card">
+  <h1>Pipes de texto</h1>
+  <table>
+    <tr>
+      <th>Nombre Pipe</th>
+      <th>Valor sin Pipe</th>
+      <th>Valor con Pipe</th>
+      <th>Opciones del Pipe</th>
+    </tr>
+    <tr>
+      <td>uppercase</td>
+      <td>{{ciudad}}</td>
+      <td>{{ciudad | uppercase}}</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>lowercase</td>
+      <td>{{ciudad}}</td>
+      <td>{{ciudad | lowercase}}</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>titlecase</td>
+      <td>{{ciudad}}</td>
+      <td>{{ciudad | titlecase}}</td>
+      <td></td>
+    </tr>
+  </table>
+</div>

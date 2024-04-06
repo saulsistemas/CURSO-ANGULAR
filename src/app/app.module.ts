@@ -9,6 +9,7 @@ import { EventBindingComponent } from './01-Binding/event-binding/event-binding.
 import { TwoWayBindingComponent } from './01-Binding/two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { OneWayBindingComponent } from './01-Binding/one-way-binding/one-way-binding.component';
+import { PipesComponent } from './02-Pipes/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OneWayBindingComponent } from './01-Binding/one-way-binding/one-way-bin
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayBindingComponent,
-    OneWayBindingComponent
+    OneWayBindingComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
