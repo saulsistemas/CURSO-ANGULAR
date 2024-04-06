@@ -10,6 +10,7 @@ import { TwoWayBindingComponent } from './01-Binding/two-way-binding/two-way-bin
 import { FormsModule } from '@angular/forms';
 import { OneWayBindingComponent } from './01-Binding/one-way-binding/one-way-binding.component';
 import { PipesComponent } from './02-Pipes/pipes/pipes.component';
+import { DirectivaNgIfComponent } from './03-Directivas/directiva-ng-if/directiva-ng-if.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PipesComponent } from './02-Pipes/pipes/pipes.component';
     EventBindingComponent,
     TwoWayBindingComponent,
     OneWayBindingComponent,
-    PipesComponent
+    PipesComponent,
+    DirectivaNgIfComponent
   ],
   imports: [
     BrowserModule,
