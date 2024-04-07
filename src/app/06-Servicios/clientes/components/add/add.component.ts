@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Cliente } from '../../interfaces/cliente.interface';
+import { ClientesService } from '../../services/clientes.service';
 
 @Component({
   selector: 'app-cliente-add',
@@ -13,8 +14,11 @@ export class AddComponent {
     domicilio:''
   }
 
+  constructor(private _clientesService:ClientesService){
+
+  }
   agregarCliente(){
-    console.log(this.cliente);
+    this._clientesService.actualizarCliente(this.cliente)
 
   }
 }

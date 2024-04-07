@@ -17,4 +17,8 @@ export class ClientesService {
   obtenerClientes():Array<Cliente>{
     return this.clientes;
   }
+
+  actualizarCliente(cliente:Cliente){
+    this.clientes.push(cliente)
+  }
 }
