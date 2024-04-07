@@ -5,6 +5,8 @@ import { AgregarClientesComponent } from './components/agregar-clientes/agregar-
 import { InicioClientesComponent } from './pages/inicio-clientes/inicio-clientes.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ActualizarClientesComponent } from './components/actualizar-clientes/actualizar-clientes.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,9 +14,11 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     ListarClientesComponent,
     AgregarClientesComponent,
-    InicioClientesComponent
+    InicioClientesComponent,
+    ActualizarClientesComponent
   ],
   imports: [
+    RouterModule,
     CommonModule,
     HttpClientModule,
     FormsModule,
@@ -23,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
   exports:[
     InicioClientesComponent,
     ListarClientesComponent,
-    AgregarClientesComponent
+    AgregarClientesComponent,
+    ActualizarClientesComponent,
   ]
 })
 export class ClientesModule { }

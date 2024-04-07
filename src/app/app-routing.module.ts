@@ -7,11 +7,13 @@ import { Pagina404Component } from './07-Rutas/pagina404/pagina404.component';
 import { InicioClientesComponent } from './09-Http/clientes/pages/inicio-clientes/inicio-clientes.component';
 import { AgregarClientesComponent } from './09-Http/clientes/components/agregar-clientes/agregar-clientes.component';
 import { ListarClientesComponent } from './09-Http/clientes/components/listar-clientes/listar-clientes.component';
+import { ActualizarClientesComponent } from './09-Http/clientes/components/actualizar-clientes/actualizar-clientes.component';
 
 const routes: Routes = [
   {path:'', component:InicioClientesComponent},
   {path:'agregar', component:AgregarClientesComponent},
-  {path:'listar', component:ListarClientesComponent}
+  {path:'listar', component:ListarClientesComponent},
+  {path:'actualizar/:cif', component:ActualizarClientesComponent}
   //{path:'', component:InicioComponent},
   //{path:'ventas', component:VentasComponent},
   //{path:'compras', component:ComprasComponent},

@@ -16,7 +16,7 @@ export class ListarClientesComponent implements OnInit{
    this.clientesService.obtenerCliente()
       .subscribe((res:any)=>{
         this.clientes = res;
-        console.log(this.clientes);
+        //console.log(this.clientes);
       }, (err:any)=>{
         console.log(err);
 

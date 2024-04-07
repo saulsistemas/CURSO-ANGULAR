@@ -6,12 +6,14 @@
       <th>cif</th>
       <th>direccion</th>
       <th>localidad</th>
+      <th>Actualizar</th>
     </tr>
     <tr *ngFor="let cliente of clientes">
       <td> {{cliente.nombre}} </td>
       <td> {{cliente.cif}} </td>
       <td> {{cliente.direccion}} </td>
       <td> {{cliente.localidad}} </td>
+      <td> <button class="btn btn-warning" routerLink="/actualizar/{{cliente.cif}}">Actualizar</button> </td>
     </tr>
   </table>
 

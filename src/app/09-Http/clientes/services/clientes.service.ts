@@ -22,6 +22,15 @@ export class ClientesService {
       )
   }
 
+  obtenerIdCliente(cif:any){
+    return this.http.get(this.baseUrl+'/'+cif)
+      .pipe(
+        map((data:any)=>{
+         return data
+        })
+      )
+  }
+
   agregarCliente(cliente:Cliente){
     return this.http.post(this.baseUrl,cliente)
       .pipe(
