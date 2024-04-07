@@ -8,12 +8,14 @@
       <div class="col-100">
         <label >Nombre Cliente</label>
         <input type="text" formControlName="nombre">
+        <span *ngIf="form.controls['nombre'].invalid">Ingrese datos</span>
       </div>
     </div>
     <div class="row">
       <div class="col-100">
         <label >Código</label>
         <input type="text" formControlName="codigo">
+        <span *ngIf="form.controls['codigo'].invalid">Ingrese 5 caracteres</span>
       </div>
     </div>
     <div class="row">
@@ -23,6 +25,13 @@
       </div>
     </div>
     <pre>
+      Estado pristine {{form.controls['nombre'].pristine}}
+      Estado dirty {{form.controls['nombre'].dirty}}
+      Estado touched {{form.controls['nombre'].touched}}
+      Estado untouched {{form.controls['nombre'].untouched}}
+      Estado valid {{form.controls['nombre'].valid}}
+      Estado invalid {{form.controls['nombre'].invalid}}
+
       {{form.value | json}}
     </pre>
     </form>
