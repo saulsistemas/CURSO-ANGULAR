@@ -12,6 +12,7 @@ import { OneWayBindingComponent } from './01-Binding/one-way-binding/one-way-bin
 import { PipesComponent } from './02-Pipes/pipes/pipes.component';
 import { DirectivaNgIfComponent } from './03-Directivas/directiva-ng-if/directiva-ng-if.component';
 import { DirectivaNgSwitchComponent } from './03-Directivas/directiva-ng-switch/directiva-ng-switch.component';
+import { DirectivaNgForComponent } from './03-Directivas/directiva-ng-for/directiva-ng-for.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DirectivaNgSwitchComponent } from './03-Directivas/directiva-ng-switch/
     OneWayBindingComponent,
     PipesComponent,
     DirectivaNgIfComponent,
-    DirectivaNgSwitchComponent
+    DirectivaNgSwitchComponent,
+    DirectivaNgForComponent
   ],
   imports: [
     BrowserModule,
