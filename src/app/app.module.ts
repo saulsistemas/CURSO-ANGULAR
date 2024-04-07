@@ -27,7 +27,8 @@ import { NavComponent } from './07-Rutas/nav/nav.component';
 import { VentasComponent } from './07-Rutas/ventas/ventas.component';
 import { ComprasComponent } from './07-Rutas/compras/compras.component';
 import { Pagina404Component } from './07-Rutas/pagina404/pagina404.component';
-import { ClientesModule } from './08-FormulariosReactivos/clientes/clientes.module';
+import { ClientesModule } from './09-Http/clientes/clientes.module';
+//import { ClientesModule } from './08-FormulariosReactivos/clientes/clientes.module';
 
 
 @NgModule({
