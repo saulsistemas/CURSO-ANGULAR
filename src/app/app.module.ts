@@ -21,6 +21,7 @@ import { PadreComponent } from './04-Componente-padre-hijo-otros/padre/padre.com
 import { HijoComponent } from './04-Componente-padre-hijo-otros/hijo/hijo.component';
 import { EnLineaComponent } from './04-Componente-padre-hijo-otros/en-linea/en-linea.component';
 import { MarcadorModule } from './05-ProyectoMarcador/marcador.module';
+import { ClientesModule } from './06-Servicios/clientes/clientes.module';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { MarcadorModule } from './05-ProyectoMarcador/marcador.module';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MarcadorModule
+    MarcadorModule,
+    ClientesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
