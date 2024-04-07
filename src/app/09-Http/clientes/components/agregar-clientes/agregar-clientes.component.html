@@ -1,1 +1,54 @@
-<p>agregar-clientes works!</p>
+<div class="card">
+  <h1>Agregar de clientes</h1>
+  <form autocomplete="off"
+  [formGroup]="form"
+  (submit)="enviarCliente()"
+
+>
+<div class="row">
+  <div class="col-100">
+    <label >Nombre Cliente</label>
+    <input type="text" formControlName="nombre">
+    <span *ngIf="form.controls['nombre'].invalid">Ingrese datos</span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-100">
+    <label >Código</label>
+    <input type="text" formControlName="cif">
+    <span *ngIf="form.controls['cif'].invalid">Ingrese 5 caracteres</span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-100">
+    <label >direccion</label>
+    <input type="text" formControlName="direccion">
+  </div>
+</div>
+<div class="row">
+  <div class="col-100">
+    <label >Localidad</label>
+    <input type="text" formControlName="localidad">
+  </div>
+</div>
+<div class="row">
+  <div class="col-100">
+    <button [disabled]="form.invalid" type="submit" class="btn btn-success"> Enviar </button>
+  </div>
+</div>
+
+<pre>
+  Estado pristine {{form.controls['nombre'].pristine}}
+  Estado dirty {{form.controls['nombre'].dirty}}
+  Estado touched {{form.controls['nombre'].touched}}
+  Estado untouched {{form.controls['nombre'].untouched}}
+  Estado valid {{form.controls['nombre'].valid}}
+  Estado invalid {{form.controls['nombre'].invalid}}
+
+  Estado Formulario invalid {{form.valid}}
+
+  {{form.value | json}}
+</pre>
+</form>
+
+  </div>

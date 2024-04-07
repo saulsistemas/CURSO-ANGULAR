@@ -59,7 +59,7 @@ import { ClientesModule } from './09-Http/clientes/clientes.module';
     AppRoutingModule,
     FormsModule,
     MarcadorModule,
-    ClientesModule
+    ClientesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

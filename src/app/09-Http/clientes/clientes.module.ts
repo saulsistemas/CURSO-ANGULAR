@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ListarClientesComponent } from './components/listar-clientes/listar-clientes.component';
 import { AgregarClientesComponent } from './components/agregar-clientes/agregar-clientes.component';
 import { InicioClientesComponent } from './pages/inicio-clientes/inicio-clientes.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -16,11 +16,14 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[
     InicioClientesComponent,
     ListarClientesComponent,
+    AgregarClientesComponent
   ]
 })
 export class ClientesModule { }

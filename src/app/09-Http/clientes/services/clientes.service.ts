@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {  map } from 'rxjs';
+import { Cliente } from '../interfaces/cliente.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,15 @@ export class ClientesService {
         map((data: any) => {
           return data;
         })
+      )
+  }
+
+  agregarCliente(cliente:Cliente){
+    return this.http.post(this.baseUrl,cliente)
+      .pipe(
+          map((data:any)=>{
+            return data
+          })
       )
   }
 }
