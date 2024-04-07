@@ -111,5 +111,35 @@ h1 {
   color: #008489;
 }
 
+/* Estilos equipos NBA */
 
+.player-box {
+  height: 120px;
+  max-width: 720px;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+.player-box.lakers {
+  border: 5px solid #552582;
+  color: #552582;
+  background-image: url('/assets/lakers.svg');
+}
+
+.player-box.celtics {
+  border: 5px solid #008348;
+  color: #008348;
+  background-image: url('/assets/celtics.svg');
+}
+
+.player-box.bulls {
+  border: 5px solid #CE1141;
+  color: #CE1141;
+  background-image: url('/assets/bulls.svg');
+}
 /*# sourceMappingURL=styles.css.map */

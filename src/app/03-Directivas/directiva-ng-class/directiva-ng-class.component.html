@@ -1,0 +1,6 @@
+<div class="card">
+  <h1>Ejemplo directiva [ngClass]</h1>
+  <div *ngFor="let usuario of usuarios" class="player-box" [ngClass]="usuario.equipo">
+    {{usuario.nombre}}
+  </div>
+</div>
