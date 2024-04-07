@@ -22,6 +22,11 @@ import { HijoComponent } from './04-Componente-padre-hijo-otros/hijo/hijo.compon
 import { EnLineaComponent } from './04-Componente-padre-hijo-otros/en-linea/en-linea.component';
 import { MarcadorModule } from './05-ProyectoMarcador/marcador.module';
 import { ClientesModule } from './06-Servicios/clientes/clientes.module';
+import { InicioComponent } from './07-Rutas/inicio/inicio.component';
+import { NavComponent } from './07-Rutas/nav/nav.component';
+import { VentasComponent } from './07-Rutas/ventas/ventas.component';
+import { ComprasComponent } from './07-Rutas/compras/compras.component';
+import { Pagina404Component } from './07-Rutas/pagina404/pagina404.component';
 
 
 @NgModule({
@@ -41,6 +46,11 @@ import { ClientesModule } from './06-Servicios/clientes/clientes.module';
     PadreComponent,
     HijoComponent,
     EnLineaComponent,
+    InicioComponent,
+    NavComponent,
+    VentasComponent,
+    ComprasComponent,
+    Pagina404Component,
   ],
   imports: [
     BrowserModule,
