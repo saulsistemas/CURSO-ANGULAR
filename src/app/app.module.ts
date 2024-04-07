@@ -14,6 +14,7 @@ import { DirectivaNgIfComponent } from './03-Directivas/directiva-ng-if/directiv
 import { DirectivaNgSwitchComponent } from './03-Directivas/directiva-ng-switch/directiva-ng-switch.component';
 import { DirectivaNgForComponent } from './03-Directivas/directiva-ng-for/directiva-ng-for.component';
 import { DirectivaNgClassComponent } from './03-Directivas/directiva-ng-class/directiva-ng-class.component';
+import { DirectivaNgStyleComponent } from './03-Directivas/directiva-ng-style/directiva-ng-style.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DirectivaNgClassComponent } from './03-Directivas/directiva-ng-class/di
     DirectivaNgIfComponent,
     DirectivaNgSwitchComponent,
     DirectivaNgForComponent,
-    DirectivaNgClassComponent
+    DirectivaNgClassComponent,
+    DirectivaNgStyleComponent
   ],
   imports: [
     BrowserModule,
