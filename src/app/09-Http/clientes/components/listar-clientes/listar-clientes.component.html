@@ -14,6 +14,7 @@
       <td> {{cliente.direccion}} </td>
       <td> {{cliente.localidad}} </td>
       <td> <button class="btn btn-warning" routerLink="/actualizar/{{cliente.cif}}">Actualizar</button> </td>
+      <td> <button class="btn btn-danger" (click)="eliminar(cliente.cif)">Eliminar</button> </td>
     </tr>
   </table>
 

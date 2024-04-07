@@ -48,4 +48,13 @@ export class ClientesService {
           })
       )
   }
+
+  eliminarCliente(cif:any){
+    return this.http.delete(this.baseUrl+"/"+cif)
+    .pipe(
+      map((data:any)=>{
+        return data
+      })
+  )
+  }
 }
