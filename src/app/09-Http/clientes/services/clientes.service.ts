@@ -39,4 +39,13 @@ export class ClientesService {
           })
       )
   }
+
+  modificarCliente(cliente:Cliente,cif:any){
+    return this.http.put(this.baseUrl+"/"+cif,cliente)
+      .pipe(
+          map((data:any)=>{
+            return data
+          })
+      )
+  }
 }
