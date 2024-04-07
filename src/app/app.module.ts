@@ -15,6 +15,8 @@ import { DirectivaNgSwitchComponent } from './03-Directivas/directiva-ng-switch/
 import { DirectivaNgForComponent } from './03-Directivas/directiva-ng-for/directiva-ng-for.component';
 import { DirectivaNgClassComponent } from './03-Directivas/directiva-ng-class/directiva-ng-class.component';
 import { DirectivaNgStyleComponent } from './03-Directivas/directiva-ng-style/directiva-ng-style.component';
+import { PadreComponent } from './04-Componente-padre-hijo-otros/padre/padre.component';
+import { HijoComponent } from './04-Componente-padre-hijo-otros/hijo/hijo.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { DirectivaNgStyleComponent } from './03-Directivas/directiva-ng-style/di
     DirectivaNgSwitchComponent,
     DirectivaNgForComponent,
     DirectivaNgClassComponent,
-    DirectivaNgStyleComponent
+    DirectivaNgStyleComponent,
+    PadreComponent,
+    HijoComponent
   ],
   imports: [
     BrowserModule,
