@@ -12,6 +12,12 @@
   </div>
 </div>
 <div class="equipos">
-  <app-equipo class="equipo" [equipo]="equipoLocal"></app-equipo>
-  <app-equipo class="equipo" [equipo]="equipoVisitante"></app-equipo>
+  <app-equipo class="equipo"
+    [equipo]="equipoLocal"
+    (canasta)="obtenerCanastaLocal($event)"
+    ></app-equipo>
+  <app-equipo class="equipo"
+    [equipo]="equipoVisitante"
+    (canasta)="obtenerCanastaVisitante($event)"
+    ></app-equipo>
 </div>

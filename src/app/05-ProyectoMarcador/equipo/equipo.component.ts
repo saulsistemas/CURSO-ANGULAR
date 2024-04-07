@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Equipo } from '../interfaces/equipo.interface';
 
 @Component({
@@ -12,5 +12,15 @@ export class EquipoComponent {
     nombre:'',
     logo:'',
     jugadores:[{nombre:'',puntos:0,imagen:''}]
+  }
+
+
+  @Output() public canasta: EventEmitter<any>=new EventEmitter;
+
+  enviarCanasta(puntos: number, nombreJugador:string):void{
+    this.canasta.emit({
+      puntos,
+      nombreJugador
+    })
   }
 }

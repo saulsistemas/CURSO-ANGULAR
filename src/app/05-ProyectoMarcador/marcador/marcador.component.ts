@@ -33,4 +33,17 @@ export class MarcadorComponent {
       {nombre:'Brook gibson',puntos:0,imagen:'/assets/img/gibson.png'}
     ]
   }
+
+  obtenerCanastaLocal($event:any):void{
+    this.puntosLocales += $event.puntos;
+    this.equipoLocal.jugadores.map((elment:any)=>{
+      elment.puntos += $event.puntos
+    })
+  }
+  obtenerCanastaVisitante($event:any):void{
+    this.puntosVisitantes += $event.puntos;
+    this.equipoVisitante.jugadores.map((elment:any)=>{
+      elment.puntos += $event.puntos
+    })
+  }
 }
