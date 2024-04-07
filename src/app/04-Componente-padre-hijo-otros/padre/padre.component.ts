@@ -17,4 +17,8 @@ export class PadreComponent {
       this.valorPadre = 30
     },3000)
   }
+
+  capturarValor($event:any):void{
+    this.valorPadre = $event.nuevoValor
+  }
 }
