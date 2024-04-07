@@ -17,6 +17,7 @@ import { DirectivaNgClassComponent } from './03-Directivas/directiva-ng-class/di
 import { DirectivaNgStyleComponent } from './03-Directivas/directiva-ng-style/directiva-ng-style.component';
 import { PadreComponent } from './04-Componente-padre-hijo-otros/padre/padre.component';
 import { HijoComponent } from './04-Componente-padre-hijo-otros/hijo/hijo.component';
+import { EnLineaComponent } from './04-Componente-padre-hijo-otros/en-linea/en-linea.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HijoComponent } from './04-Componente-padre-hijo-otros/hijo/hijo.compon
     DirectivaNgClassComponent,
     DirectivaNgStyleComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    EnLineaComponent
   ],
   imports: [
     BrowserModule,
