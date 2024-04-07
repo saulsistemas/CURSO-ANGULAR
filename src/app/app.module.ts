@@ -1,6 +1,8 @@
+
+
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterpolacionComponent } from './01-Binding/interpolacion/interpolacion.component';
@@ -18,6 +20,8 @@ import { DirectivaNgStyleComponent } from './03-Directivas/directiva-ng-style/di
 import { PadreComponent } from './04-Componente-padre-hijo-otros/padre/padre.component';
 import { HijoComponent } from './04-Componente-padre-hijo-otros/hijo/hijo.component';
 import { EnLineaComponent } from './04-Componente-padre-hijo-otros/en-linea/en-linea.component';
+import { MarcadorModule } from './05-ProyectoMarcador/marcador.module';
+
 
 @NgModule({
   declarations: [
@@ -35,14 +39,16 @@ import { EnLineaComponent } from './04-Componente-padre-hijo-otros/en-linea/en-l
     DirectivaNgStyleComponent,
     PadreComponent,
     HijoComponent,
-    EnLineaComponent
+    EnLineaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MarcadorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
