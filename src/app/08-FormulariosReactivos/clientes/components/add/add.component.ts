@@ -18,5 +18,9 @@ export class AddComponent  {
 
   }
 
+  enviarCliente():void{
+    console.log(this.form.value);
+
+  }
 
 }

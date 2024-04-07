@@ -2,6 +2,7 @@
   <div class="row">
     <form autocomplete="off"
       [formGroup]="form"
+      (submit)="enviarCliente()"
 
     >
     <div class="row">
@@ -24,6 +25,13 @@
         <input type="text" formControlName="domicilio">
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-100">
+        <button [disabled]="form.invalid" type="submit" class="btn btn-success"> Enviar </button>
+      </div>
+    </div>
+
     <pre>
       Estado pristine {{form.controls['nombre'].pristine}}
       Estado dirty {{form.controls['nombre'].dirty}}
@@ -31,6 +39,8 @@
       Estado untouched {{form.controls['nombre'].untouched}}
       Estado valid {{form.controls['nombre'].valid}}
       Estado invalid {{form.controls['nombre'].invalid}}
+
+      Estado Formulario invalid {{form.valid}}
 
       {{form.value | json}}
     </pre>
