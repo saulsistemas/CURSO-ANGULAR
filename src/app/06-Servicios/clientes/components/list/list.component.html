@@ -1,1 +1,17 @@
-<p>list works!</p>
+<div class="row">
+  <div class="col-100">
+    <h1>Listado de cliente</h1>
+    <table>
+      <tr>
+        <th>Cliente</th>
+        <th>Código</th>
+        <th>Domicilio</th>
+      </tr>
+      <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.nombre}}</td>
+        <td>{{cliente.codigo}}</td>
+        <td>{{cliente.domicilio}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

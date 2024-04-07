@@ -1,1 +1,20 @@
-<p>add works!</p>
+<div class="row">
+  <div class="col-25"></div>
+  <div class="col-50">
+    <form >
+      <div class="row">
+        <label >Nombre {{cliente.nombre}}</label>
+        <input type="text" name="nombre" [(ngModel)]="cliente.nombre">
+      </div>
+      <div class="row">
+        <label >Código </label>
+        <input type="text" name="nombre" [(ngModel)]="cliente.codigo">
+      </div>
+      <div class="row">
+        <label >Domicilio </label>
+        <input type="text" name="nombre" [(ngModel)]="cliente.domicilio">
+      </div>
+      <button (click)="agregarCliente()" class="btn btn-success">Enviar</button>
+    </form>
+  </div>
+</div>

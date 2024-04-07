@@ -1,10 +1,20 @@
 import { Component } from '@angular/core';
+import { Cliente } from '../../interfaces/cliente.interface';
 
 @Component({
-  selector: 'app-add',
+  selector: 'app-cliente-add',
   templateUrl: './add.component.html',
-  styleUrl: './add.component.css'
 })
 export class AddComponent {
 
+  public cliente:Cliente = {
+    nombre:'sds',
+    codigo:'',
+    domicilio:''
+  }
+
+  agregarCliente(){
+    console.log(this.cliente);
+
+  }
 }

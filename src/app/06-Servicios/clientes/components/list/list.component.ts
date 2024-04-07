@@ -8,14 +8,10 @@ import { Cliente } from '../../interfaces/cliente.interface';
 })
 export class ListComponent {
 
-  public clientes:Array<Cliente> =[];
+  public clientes:Array<Cliente> =[{nombre:'',codigo:'',domicilio:''}];
 
   constructor(private _clientesService: ClientesService){
-
     this.clientes = this._clientesService.obtenerClientes();
-    console.log(this.clientes);
-
-
   }
 
 

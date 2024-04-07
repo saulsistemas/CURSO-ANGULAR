@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListComponent } from './components/list/list.component';
 import { AddComponent } from './components/add/add.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -11,10 +12,12 @@ import { AddComponent } from './components/add/add.component';
     AddComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports:[
-    ListComponent
+    ListComponent,
+    AddComponent
   ]
 })
 export class ClientesModule { }
