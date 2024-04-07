@@ -21,12 +21,13 @@ import { PadreComponent } from './04-Componente-padre-hijo-otros/padre/padre.com
 import { HijoComponent } from './04-Componente-padre-hijo-otros/hijo/hijo.component';
 import { EnLineaComponent } from './04-Componente-padre-hijo-otros/en-linea/en-linea.component';
 import { MarcadorModule } from './05-ProyectoMarcador/marcador.module';
-import { ClientesModule } from './06-Servicios/clientes/clientes.module';
+//import { ClientesModule } from './06-Servicios/clientes/clientes.module';
 import { InicioComponent } from './07-Rutas/inicio/inicio.component';
 import { NavComponent } from './07-Rutas/nav/nav.component';
 import { VentasComponent } from './07-Rutas/ventas/ventas.component';
 import { ComprasComponent } from './07-Rutas/compras/compras.component';
 import { Pagina404Component } from './07-Rutas/pagina404/pagina404.component';
+import { ClientesModule } from './08-FormulariosReactivos/clientes/clientes.module';
 
 
 @NgModule({
