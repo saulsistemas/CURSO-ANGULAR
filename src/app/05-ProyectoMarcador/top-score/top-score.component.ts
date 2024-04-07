@@ -33,4 +33,14 @@ export class TopScoreComponent implements OnInit{
     console.log(this.equipoLocal);
 
   }
+
+  ngAfterContentChecked(){
+    this.sortJugadores()
+  }
+
+  sortJugadores(){
+    this.jugadores.sort((a:any,b:any)=>{
+      return (b.puntos -a.puntos)
+    })
+  }
 }
